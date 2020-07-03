@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> ajokemi</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: #000;
+		}	
+		h1{
+			background-color: black;
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 10px 100px;
+			margin: 0px;
+			font-size: 30px;
+			font-weight: normal;
+
+		}
+		#container{
+			height: 410px;
+			width: 350px;
+			margin: auto;
+			background-color: white;
+			border-radius: 20px;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+		}
+		p{
+			padding-left: 20px;
+		}
+		
+		#bill{
+		
+			margin-left: 20px;
+			font-size: 20px;
+		}
+		#people{
+			margin-left: 20px;
+			font-size: 20px;
+		}
+		#service{
+			margin-left: 20px;
+			font-size: 20px;
+		}
+		button{
+			text-transform: uppercase;
+			font-weight: bold;
+			background-color: brown;
+			border-radius: 5px;
+			color: white;
+			font-size: 20px;
+		}
+		button:hover{
+			text-transform: uppercase;
+			font-weight: bold;
+			background-color: green;
+			border-radius: 5px;
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function myfunction() {
+			document.getElementId("me").innerHTML ="bad"
+		}
+	</script>
+</head>
+<body>
+	<div id="container">
+	<h1>electric calculator</h1>	
+	<div id="calculator">
+	<form action="action_page.php">
+		<p>How much is your bill</p><br>
+		<input type="text" placeholder="Bill Amount" id="bill"><br>
+		<p id="me">How is the service rendered</p><br>
+		<select id="service">
+			<option value="Outstanding"> Outstanding</option>
+			<option value="Good">Good</option>
+			<option value="it is ok"> Ok</option>
+			<option value="Bad">Bad</option>
+			<option disabled value="0"></option>
+		</select><br>
+		<p>How many people are paying the bill</p>
+		<input type="text" placeholder="Number of people" id="people"><br><br>
+		<div style="text-align: center;">
+			<button type="button" id="calculate" onclick="myfunction()"> calculate</button>
+		</div>
+		
+	</form>
+
+		
+	</div>
+	</div>
+	
+</div>
+	
+</body>
+</html>
